@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+</head>
+
+<body  >
+        <div class='complete_Bar'>
+          <div class="search_bar">
+
+
+                {{!-- <input class="search" placeholder="   Search"> <img src="image/search.svg" height="80%"> --}}
+           <form action="/Notes" method="POST"  id="note">
+<input type="textarea" name="notes"  placeholder="note" class="Note">
+
+
+<input type="textarea" name="subjects"  class="Note2" >
+
+
+<input type="submit" name="submit"  class="btn1" value="save">
+
+</form>
+            </div>
+            <img src="./image/e3e725d3b7d2339c41bb28ff92e8635d.svg" class="toggle">
+           
+        <a href="/logout">logout</a>
+            <img src="image/switch.svg" class="mode" height="80%">
+        </div>
+
+        <a href="/register"><img class="authenticator" src="image/authentication.svg" height="80%"></a>
+        
+    </div>
+
+    <div class="mid">
+        <div class="header_space"></div>
+        <div class="menu_option">
+
+            <div class="menu_option1">
+                <ul>
+                    <li id="calend"> <img src="./image/calendar.svg" height="100%" width="50px" padding-left="2px" ;> </li>
+                    <li id="briefcase"> <img src="image/briefcase.svg" height="53px" width="50px"></li>
+                    <li> <img src="image/google pencil.png" height="53px" width="50px"></li>
+                    <li> <img src="image/recycling.jpg" height="53px" width="50px"></li>
+                </ul>
+            </div>
+
+            <!-- <div class="menu_option2">  <ul style="list-style: none;">
+<li> <div class="calender">Calender</div>></li>
+<li>  <div class="security_box"> Security Box</div></li>
+<li> <div class="pencil"> Pencil </div></li>
+<li> <div class="trash"> Trash </div></li>
+</ul>
+</div> -->
+
+
+        </div>
+        <div class="Notes">
+            {{Notess}}
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="hello1">
+            <inline>
+                <h3>open source license</h3>
+                <h2>&copy copyright 2005-20</h2>
+            </inline>
+        </div>
+        <div class="hello2">b</div>
+
+
+
+        <!-- <inline><h2>&copy copyright 2005-20</h2>
+        <center><h3>open source license</h3></center></inline> -->
+    </div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
